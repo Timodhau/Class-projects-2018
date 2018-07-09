@@ -80,6 +80,7 @@ for tokens in all_tokens:
     X[:,i] = tokens_to_vector(tokens)
     i += 1
 
+print(X)
 
 svd = TruncatedSVD()
 Z = svd.fit_transform(X)
